@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CICD WEB Login Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background: linear-gradient(135deg, #a8edea, #fed6e3 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+    }
+    .login-card {
+      background: #fff;
+      padding: 2.5rem 2.5rem 2rem 2.5rem;
+      border-radius: 16px;
+      box-shadow: 0 6px 25px rgba(44,43,94,0.16), 0 1.5px 6px rgba(0,0,0,0.02);
+      width: 340px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .login-card h2 {
+      margin-bottom: 24px;
+      color: #2b2850;
+      letter-spacing: 1px;
+      font-weight: 700;
+      font-size: 1.85rem;
+    }
+    .login-card form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .login-card input[type="text"],
+    .login-card input[type="password"] {
+      padding: 12px 14px;
+      margin-bottom: 20px;
+      border: 1px solid #f1e9ee;
+      border-radius: 7px;
+      background-color: #f8f8fa;
+      font-size: 1rem;
+      transition: border-color 0.2s;
+    }
+    .login-card input:focus {
+      outline: none;
+      border-color: #a087d7;
+      background-color: #f2edfc;
+    }
+    .login-card button {
+      background: linear-gradient(90deg, #7f7fd5, #86a8e7, #91eae4);
+      color: #fff;
+      border: none;
+      border-radius: 7px;
+      padding: 12px 0;
+      font-size: 1.09rem;
+      font-weight: 600;
+      box-shadow: 0 2px 8px rgba(127,127,213,0.10);
+      cursor: pointer;
+      margin-bottom: 8px;
+      transition: background 0.2s, transform 0.1s;
+    }
+    .login-card button:hover {
+      background: linear-gradient(90deg, #86a8e7, #91eae4);
+      transform: scale(1.03);
+    }
+    .signup-link {
+      margin-top: 12px;
+      font-size: 16px;
+      color: #7f7fd5;
+      text-decoration: none;
+      transition: color 0.18s;
+    }
+    .signup-link:hover {
+      color: #a087d7;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-card">
+    <h2>CICD WEB</h2>
+    <form>
+      <input type="text" placeholder="Username" name="username" required />
+      <input type="password" placeholder="Password" name="password" required />
+      <button type="submit">Login</button>
+    </form>
+    <a class="signup-link" href="#">Don't have an account? Sign up</a>
+  </div>
+</body>
+</html>
